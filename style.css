@@ -11,6 +11,12 @@ body {
 h1 {
     color: blue;
 }
+h3 {
+    color: teal;
+}
+h5 {
+    color: purple;
+}
 .container {
     background-color: white;
     padding: 20px;
