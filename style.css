@@ -8,7 +8,9 @@ body {
     align-items: center;
     height: 100vh;
 }
-
+h1 {
+    color: blue;
+}
 .container {
     background-color: white;
     padding: 20px;
