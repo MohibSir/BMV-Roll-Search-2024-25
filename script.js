@@ -27,14 +27,17 @@ function searchData() {
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = '';
 
-    const student = json.find(student => student["Application No"] === searchInput);
+    const student = json.find(student => student["Student Code"] === searchInput);
 
     if (student) {
         resultDiv.innerHTML = `
-            <p><strong>Application No:</strong> ${student["Application No"]}</p>
             <p><strong>Student Code:</strong> ${student["Student Code"]}</p>
             <p><strong>Student Name:</strong> ${student["Student Name"]}</p>
+            <p><strong>Application No:</strong> ${student["Application No"]}</p> 
+            <p><strong>Semester:</strong> ${student["Year"]}</p>
             <p><strong>Roll No:</strong> ${student["RollNo"]}</p>
+            <p><strong>Reg Form No:</strong> ${student["Reg Form No"]}</p>
+            <p><strong>Reg No:</strong> ${student["Reg No"]}</p>
             <button onclick="window.print()">Print</button>
         `;
     } else {
